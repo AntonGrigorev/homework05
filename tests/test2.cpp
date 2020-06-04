@@ -14,8 +14,8 @@ class MockTransaction: public Transaction{
 
 TEST(Transaction, SaveToDataBase) {
   MockTransaction tr;
-  MockAccount from(1, 500);
-  MockAccount to(2, 400);
+  Account from(1, 500);
+  Account to(2, 400);
   EXPECT_CALL(tr, SaveToDataBase(from, to, 150)).Times(1);
   tr.SaveToDataBase(from, to, 150);
 }
