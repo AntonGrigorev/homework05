@@ -14,8 +14,7 @@ class MockAccount: public Account{
 	MOCK_METHOD(void, Unlock, (), (override));
 };
 
-
-///Тестирование класса Account
+//Тестирование класса Account
 
 TEST(Account, GetBalance){
 	MockAccount acc(1,500);
@@ -36,7 +35,8 @@ TEST(Account, Lock) {
 	EXPECT_THROW(acc.Account::Lock(), std::runtime_error);
 }
 
-/*TEST(Account, Unlock) {
+TEST(Account, Unlock) {
 	MockAccount acc(1, 500);
 	EXPECT_CALL(acc, Unlock()).Times(1);
-}*/
+	acc.Unlock();
+}
