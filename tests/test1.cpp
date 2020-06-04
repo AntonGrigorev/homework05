@@ -8,9 +8,6 @@ inline bool operator==(Account a, Account b) { return true; }
 class MockAccount: public Account{
 	public:
 	MockAccount(int id, int balance):Account(id, balance){}
-	MOCK_METHOD(int, GetBalance, (), (const, override));
-	MOCK_METHOD(void, ChangeBalance, (int diff), (override));
-	MOCK_METHOD(void, Lock, (), (override));
 	MOCK_METHOD(void, Unlock, (), (override));
 };
 
