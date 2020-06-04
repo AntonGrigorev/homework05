@@ -11,7 +11,7 @@ jobs:
   - name: "Coveralls.io"
     before_install:
     - pyenv rehash
-    - pip install cpp-coveralls
+    - pip install --user cpp-coveralls
     - pyenv rehash
     script:
     - cmake -H. -B_build -DBUILD_TESTS=ON
