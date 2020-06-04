@@ -1,6 +1,6 @@
 ## Laboratory work V
 [![Build Status](https://travis-ci.org/AntonGrigorev/homework05.svg?branch=master)](https://travis-ci.org/AntonGrigorev/homework05)
-
+[![Coverage Status](https://coveralls.io/repos/github/AntonGrigorev/homework05/badge.svg?branch=master)](https://coveralls.io/github/AntonGrigorev/homework05?branch=master)
 <a href="https://yandex.ru/efir/?stream_id=vQw_LH0UfN6I"><img src="https://raw.githubusercontent.com/tp-labs/lab05/master/preview.png" width="640"/></a>
 
 Данная лабораторная работа посвещена изучению фреймворков для тестирования на примере **GTest**
